@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "name": "terminal_tetris",
+  "version": "1.0.0",
+  "description": "ターミナルで動くテトリスの最小ひな形",
+  "main": "tetris-cli.js",
+  "scripts": {
+    "start": "node tetris-cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.2"
+  }
+}
