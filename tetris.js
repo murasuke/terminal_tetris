@@ -313,6 +313,7 @@ function setRawMode(rawMode) {
 function main() {
   setRawMode(true);
 
+  //ボードの枠（上下左右の壁）を初期化する
   let BOARD = initializeBoard();
 
   let { block: currentBlock, x, y } = newBlock(BOARD_WIDTH);

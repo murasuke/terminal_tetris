@@ -16,9 +16,9 @@ function draw(x, y, chars, color = '30') {
   process.stdout.write(str);
 }
 
-draw(5, 15, '██', 31); // 赤色で表示
-draw(6, 6, '██', 34); // 青色で表示
-draw(7, 10, '██', 32); // 緑色で表示
+// draw(5, 15, '██', 31); // 赤色で表示
+// draw(6, 6, '██', 34); // 青色で表示
+// draw(7, 10, '██', 32); // 緑色で表示
 
 /**
  * 行列を回転させる
@@ -28,7 +28,7 @@ draw(7, 10, '██', 32); // 緑色で表示
  */
 function rotateMatrix(matrix, dir) {
   const n = matrix.length;
-  // 転置
+  // 行列を転置
   const transposed = Array.from({ length: n }, (_, i) =>
     Array.from({ length: n }, (_, j) => matrix[j][i])
   );
@@ -71,7 +71,7 @@ let L = [
 ];
 
 /**
- *
+ * ブロックの描画を行う
  * @param {*} x
  * @param {*} y
  * @param {number[][]} b - ブロックの行列（各要素は色を表す数値、0は空白。1:赤, 2:緑, 3:黄, 4:青, ...）
@@ -88,8 +88,10 @@ function drawBlock(x, y, b) {
   });
 }
 
-drawBlock(10, 2, L);
+drawBlock(10, 1, L);
+drawBlock(20, 1, rotateRight(L));
+drawBlock(30, 1, rotateRight(rotateRight(L)));
+drawBlock(40, 1, rotateRight(rotateRight(rotateRight(L))));
+drawBlock(50, 1, rotateRight(rotateRight(rotateRight(rotateRight(L)))));
 
-drawBlock(20, 2, rotateLeft(L));
-drawBlock(30, 5, rotateLeft(rotateLeft(L)));
-drawBlock(40, 5, rotateLeft(rotateLeft(rotateLeft(L))));
+draw(0, 3, ' ');
