@@ -152,7 +152,7 @@ draw(3, 2, '██', 32); // 緑色で表示
 ```
 指定した色、位置で文字が描画されました
 
-![alt text](./documents/image-1.png)
+![alt text](./doc/image-1.png)
 
 
 ## ゲームとしてのロジック
