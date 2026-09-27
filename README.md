@@ -210,7 +210,7 @@ function drawBlock(x, y, b) {
 drawBlock(10, 2, L);
 ```
 
-![alt text](./documents/image-2.png)
+![alt text](./doc/image-2.png)
 
 
 続いて、回転する処理を作ります
