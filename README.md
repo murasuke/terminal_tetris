@@ -1,6 +1,6 @@
 # ターミナルで動くテトリス(javascript)
 
-![alt text](./documents/image.png)
+![alt text](./doc/image.png)
 
 ## はじめに
 
